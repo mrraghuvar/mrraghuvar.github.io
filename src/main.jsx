@@ -54,6 +54,6 @@ const mainPage = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-<RouterProvider router={mainPage} />
+<Home/>
   </React.StrictMode>
 )
