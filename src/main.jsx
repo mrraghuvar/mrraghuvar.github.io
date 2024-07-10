@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  BrowserRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -55,6 +54,6 @@ const mainPage = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-<BrowserRouter router={mainPage} />
-  </React.StrictMode>,
+<RouterProvider router={mainPage} />
+  </React.StrictMode>
 )
