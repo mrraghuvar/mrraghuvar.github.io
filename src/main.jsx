@@ -4,14 +4,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home'
+import Home from '../Home'
 import './index.css'
-import Sllaybus from './Routes/syllabus';
-import Cho from './Routes/cho';
-import Impq from './Routes/impq';
-import Notes from './Routes/notes';
-import Resource from './Routes/resource';
-import Updates from './Routes/updates';
+import Sllaybus from '../Routes/syllabus';
+import Cho from '../Routes/cho';
+import Impq from '../Routes/impq';
+import Notes from '../Routes/notes';
+import Resource from '../Routes/resource';
+import Updates from '../Routes/updates';
 
 const mainPage = createBrowserRouter([
   {
@@ -54,6 +54,6 @@ const mainPage = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-<Home/>
+<RouterProvider router={mainPage} />
   </React.StrictMode>
 )
